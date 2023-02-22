@@ -64,3 +64,6 @@ yarn-error.log
 
 # Environment variables
 .env*
+
+# Files required for debugging on VS Code
+.vscode/.react
