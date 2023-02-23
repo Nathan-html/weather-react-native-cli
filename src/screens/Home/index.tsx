@@ -1,4 +1,4 @@
-import { ActivityIndicator, Image, StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, Image, Text, View } from "react-native";
 import { useEffect, useState } from "react";
 import styles from "../../style/style";
 import { API_WEATHER_TOKEN } from "@env";
@@ -20,11 +20,6 @@ function Home (): JSX.Element {
                 console.log('response', response);
                 setData(response);
                 setLoading(false);
-                if (response.status === 200) {
-
-                } else {
-
-                }
             }).catch(error => {
                 console.error(error);
             });
